@@ -5,7 +5,7 @@ import DonutLargeIcon from '@mui/icons-material/DonutLarge';
 import ChatIcon from '@mui/icons-material/Chat';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import SideBarChat from '../Sidebar-Chat/SideBarChat';
+import SideBarChat from '../Components/Sidebar-Chat/SideBarChat';
 const SideBar = () => {
   return (
     <div className='sidebar'>
@@ -30,6 +30,8 @@ const SideBar = () => {
         </div>
       </div>
       <div className='sidebar_chats'>
+        <SideBarChat addNewChat />
+        <SideBarChat />
         <SideBarChat />
       </div>
     </div>
